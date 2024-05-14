@@ -1,3 +1,6 @@
 # React + Strict + Vitest
 
-I don't think you can do this
+WE FUCKING DID IT 🙌
+
+saw this PR tho:
+https://github.com/testing-library/react-testing-library/pull/1241
