@@ -1,16 +1,27 @@
 import { describe, it, expect } from "vitest";
 import { render, screen, configure } from "@testing-library/react";
 
-// test strict
-configure({ reactStrictMode: true });
+// NOTE: you can also do it by wrapping the component with StrictMode
 
 import App from "./App.js";
+import React from "react";
 
 describe("App", () => {
-  it("renders the right thing in the DOM because strict mode", () => {
+  it("using the RTL configure way", () => {
+    configure({ reactStrictMode: true });
     render(<App />);
 
-    // NOTE: see if 2 renders in development mode
+    expect(screen.getByText("2")).toBeInTheDocument();
+  });
+
+  it("using the react component to wrap it", () => {
+    configure({ reactStrictMode: false });
+    render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+    );
+
     expect(screen.getByText("2")).toBeInTheDocument();
   });
 });
