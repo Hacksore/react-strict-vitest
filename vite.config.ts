@@ -7,10 +7,6 @@ export default defineConfig({
   test: {
     // 👋 add the line below to add jsdom to vite
     environment: "jsdom",
-    setupFiles: "./setup.ts"
+    setupFiles: "./setup.ts",
   },
-  // NOTE: this affects the prod build in preview tho
-  // define: {
-  //   "process.env.NODE_ENV": JSON.stringify("development"),
-  // },
 });

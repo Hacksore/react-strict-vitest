@@ -1,8 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { render, screen, configure } from "@testing-library/react";
 
-// NOTE: you can also do it by wrapping the component with StrictMode
-
 import App from "./App.js";
 import React from "react";
 
