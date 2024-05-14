@@ -7,7 +7,7 @@ describe("App", () => {
   it("renders the right thing in the dom", () => {
     render(<App />);
 
-    // TODO: see if 2 renders in developement mode
+    // TODO: see if 2 renders in development mode
     expect(screen.getByText("2")).toBeInTheDocument();
   });
 });

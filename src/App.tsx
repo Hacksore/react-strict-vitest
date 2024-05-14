@@ -6,7 +6,7 @@ function App() {
     setCount((c) => c + 1);
   }, []);
 
-  return <div>{count}</div>;
+  return <h2>{count}</h2>;
 }
 
 export default App;
