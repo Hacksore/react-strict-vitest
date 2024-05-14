@@ -8,6 +8,6 @@ describe("App", () => {
     render(<App />);
 
     // TODO: see if 2 renders in developement mode
-    expect(screen.getByText("1")).toBeInTheDocument();
+    expect(screen.getByText("2")).toBeInTheDocument();
   });
 });

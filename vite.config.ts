@@ -9,6 +9,7 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./setup.ts"
   },
+  // NOTE: this affects the prod build in preview tho
   // define: {
   //   "process.env.NODE_ENV": JSON.stringify("development"),
   // },
